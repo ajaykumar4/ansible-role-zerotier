@@ -1,0 +1,36 @@
+---
+dependencies: []
+
+galaxy_info:
+  role_name: zerotier
+  author: Ajay Kumar
+  description: Install and add new members to a zerotier network for x86_64 and ARM-based computers.
+  company: ""
+  license: GPLv3
+  min_ansible_version: 2.9
+  platforms:
+    - name: EL
+      versions:
+        - 7
+        - 8
+    - name: Fedora
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - stretch
+        - buster
+    - name: Ubuntu
+      versions:
+        - xenial
+        - bionic
+        - focal
+  galaxy_tags:
+  - zerotier
+  - networking
+  - system
+  - server
+  - arm
+  - raspberry
+  - pi
+  - jetson

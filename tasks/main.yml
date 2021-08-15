@@ -1,0 +1,14 @@
+---
+# tasks file for ansible-role-zerotier
+- import_tasks: install.yml
+  when:
+  - not skip_install | default(false) | bool
+
+- import_tasks: authorize_node.yml
+  when:
+  - zerotier_api_accesstoken | length > 0
+  - ansible_local['zerotier']['node_id'] is defined
+
+- import_tasks: join_network.yml
+  when:
+  - zerotier_network_id is defined
