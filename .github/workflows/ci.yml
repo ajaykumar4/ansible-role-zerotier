@@ -4,7 +4,7 @@ name: CI
   pull_request:
   push:
     branches:
-      - master
+      - '*'
   schedule:
     - cron: "0 7 * * 0"
 
@@ -47,7 +47,6 @@ jobs:
           - ubuntu1804
           - debian10
           - debian9
-          - fedora34
 
     steps:
       - name: Check out the codebase.

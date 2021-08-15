@@ -1,2 +1,2 @@
-**/inventory/hosts.ini
-site.yml
+**/inventory/
+!**/sample

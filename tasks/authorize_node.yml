@@ -14,8 +14,8 @@
     register: auth_apiresult
     delegate_to: "{{ zerotier_api_delegate }}"
     when:
-    - ansible_local['zerotier']['networks'][zerotier_network_id] is not defined or
-      ansible_local['zerotier']['networks'][zerotier_network_id]['status'] != 'OK'
+      - ansible_local['zerotier']['networks'][zerotier_network_id] is not defined or
+        ansible_local['zerotier']['networks'][zerotier_network_id]['status'] != 'OK'
 
   - name: Configure members in network
     uri:
@@ -33,7 +33,7 @@
     delegate_to: "{{ zerotier_api_delegate }}"
 
   when:
-  - not ansible_check_mode
+    - not ansible_check_mode
   tags:
-  - configuration
+    - configuration
   become: false

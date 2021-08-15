@@ -1,7 +1,7 @@
 Ansible Role: ZeroTier
 =========
 
-[![CI](https://github.com/ajaykumar4/ansible-role-zerotier/workflows/CI/badge.svg?event=push)](https://github.com/ajaykumar4/ansible-role-docker/actions?query=workflow%3ACI) [![GitHub issues](https://img.shields.io/github/issues/ajaykumar4/ansible-role-zerotier.svg)](https://github.com/ajaykumar4/ansible-role-zerotier/issues)
+[![CI](https://github.com/AjayKumar4/ansible-role-zerotier/workflows/CI/badge.svg?event=push)](https://github.com/AjayKumar4/ansible-role-zerotier/actions?query=workflow%3ACI) [![GitHub issues](https://img.shields.io/github/issues/AjayKumar4/ansible-role-zerotier.svg)](https://github.com/AjayKumar4/ansible-role-zerotier/issues)
 
 This Ansible role adds the ZeroTier repository and installs the `zerotier` package using your system's package manager. Depending on the provided variables this role can also add and authorize new members to (existing) ZeroTier networks, and tell the new member to join the network.
 
@@ -110,5 +110,5 @@ Example Playbook
 Start provisioning of the cluster using the following command:
 
 ```bash
-ansible-playbook inventory/my-cluster/site.yml -i inventory/my-cluster/hosts.ini
+ansible-playbook inventory/my-cluster/playbook.yml -i inventory/my-cluster/hosts.ini
 ```
