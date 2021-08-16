@@ -5,6 +5,8 @@ Ansible Role: ZeroTier
 
 This Ansible role adds the ZeroTier repository and installs the `zerotier` package using your system's package manager. Depending on the provided variables this role can also add and authorize new members to (existing) ZeroTier networks, and tell the new member to join the network.
 
+If you need a more flexible and generic role for ZeroTier, check out [`ajaykumar4.zerotier`](https://galaxy.ansible.com/ajaykumar4/zerotier).
+
 Requirements
 ------------
 
